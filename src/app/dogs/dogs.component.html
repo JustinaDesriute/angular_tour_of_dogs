@@ -1,0 +1,6 @@
+<h2>My Dogs</h2>
+<ul class="dogs">
+  <li *ngFor="let dog of dogs" (click)="onSelect(dog)">
+    <span class="badge">{{dog.id}}</span> {{dog.name }} - {{dog.breed}}
+  </li>
+</ul>
